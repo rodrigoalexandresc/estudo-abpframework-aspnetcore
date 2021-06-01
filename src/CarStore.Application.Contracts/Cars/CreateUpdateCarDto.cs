@@ -12,7 +12,7 @@ namespace CarStore.Cars
         public string Model { get; set; }
 
         [Required]
-        public CarType CarType { get; set; } = CarType.Undefined;
+        public CarType Type { get; set; } = CarType.Undefined;
 
         [Required]
         [DataType(DataType.Date)]
