@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace CarStore.Cars
 {
@@ -20,5 +18,7 @@ namespace CarStore.Cars
 
         [Required]
         public float Price { get; set; }
+
+        //Teste
     }
 }
