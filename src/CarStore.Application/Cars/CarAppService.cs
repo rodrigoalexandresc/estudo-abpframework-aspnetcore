@@ -9,7 +9,7 @@ using Volo.Abp.Domain.Repositories;
 
 namespace CarStore.Cars
 {
-    public class CarAppService : CrudAppService<Car, CarDTO, Guid, PagedAndSortedResultRequestDto, CreateUpdateCarDto>
+    public class CarAppService : CrudAppService<Car, CarDTO, Guid, PagedAndSortedResultRequestDto, CreateUpdateCarDto>, ICarAppService
     {
         public CarAppService(IRepository<Car, Guid> repository) : base(repository)
         {
