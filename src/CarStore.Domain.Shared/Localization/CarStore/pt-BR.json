@@ -25,6 +25,11 @@
     "Enum:CarType:4": "SUV",
     "Enum:CarType:5": "Pickup",
     "Enum:CarType:6": "Citycar",
-    "Enum:CarType:7": "Sport"
+    "Enum:CarType:7": "Sport",
+    "Permission:CarStore": "Loja de Carros",
+    "Permission:Cars": "Carros",
+    "Permission:Cars.Create": "Criar novos carros",
+    "Permission:Cars.Edit": "Alterar carros",
+    "Permission:Cars.Delete": "Excluir carros"
   }
 }

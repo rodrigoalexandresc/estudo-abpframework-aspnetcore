@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarStore.Permissions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,11 @@ namespace CarStore.Cars
     {
         public CarAppService(IRepository<Car, Guid> repository) : base(repository)
         {
+            GetPolicyName = CarStorePermissions.Cars.Default;
+            GetListPolicyName = CarStorePermissions.Cars.Default;
+            CreatePolicyName = CarStorePermissions.Cars.Create;
+            UpdatePolicyName = CarStorePermissions.Cars.Edit;
+            DeletePolicyName = CarStorePermissions.Cars.Delete;
         }
     }
 }
