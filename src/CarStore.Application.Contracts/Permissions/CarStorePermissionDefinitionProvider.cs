@@ -8,10 +8,12 @@ namespace CarStore.Permissions
     {
         public override void Define(IPermissionDefinitionContext context)
         {
-            var myGroup = context.AddGroup(CarStorePermissions.GroupName);
+            var carStoreGroup = context.AddGroup(CarStorePermissions.GroupName, L("Permission:CarStore"));
 
-            //Define your own permissions here. Example:
-            //myGroup.AddPermission(CarStorePermissions.MyPermission1, L("Permission:MyPermission1"));
+            var carsPermission = carStoreGroup.AddPermission(CarStorePermissions.Cars.Default, L("Permission:Cars"));
+            carsPermission.AddChild(CarStorePermissions.Cars.Create, L("Permission:Cars.Create"));
+            carsPermission.AddChild(CarStorePermissions.Cars.Edit, L("Permission:Cars.Edit"));
+            carsPermission.AddChild(CarStorePermissions.Cars.Delete, L("Permission:Cars.Delete"));
         }
 
         private static LocalizableString L(string name)
