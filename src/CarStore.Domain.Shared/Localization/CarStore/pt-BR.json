@@ -25,6 +25,7 @@
     "Enum:CarType:4": "SUV",
     "Enum:CarType:5": "Pickup",
     "Enum:CarType:6": "Citycar",
-    "Enum:CarType:7": "Sport"
+    "Enum:CarType:7": "Sport",
+    "CarStore:0001":  "Já existe uma marca com este mesmo nome: {name}"
   }
 }
