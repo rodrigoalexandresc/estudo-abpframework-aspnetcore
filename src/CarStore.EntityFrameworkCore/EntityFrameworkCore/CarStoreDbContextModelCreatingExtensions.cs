@@ -1,4 +1,5 @@
-﻿using CarStore.Cars;
+﻿using CarStore.Brands;
+using CarStore.Cars;
 using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
 using Volo.Abp.EntityFrameworkCore.Modeling;
@@ -18,6 +19,17 @@ namespace CarStore.EntityFrameworkCore
                 b.ToTable(CarStoreConsts.DbTablePrefix + "Cars", CarStoreConsts.DbSchema);
                 b.ConfigureByConvention();
                 b.Property(p => p.Model).IsRequired().HasMaxLength(128);
+            });
+
+            builder.Entity<Brand>(b =>
+            {
+                b.ToTable(CarStoreConsts.DbTablePrefix + "Brands", CarStoreConsts.DbSchema);
+                b.ConfigureByConvention();
+                b.Property(x => x.Name)
+                    .IsRequired()
+                    .HasMaxLength(BrandConsts.MaxNameLength);
+
+                b.HasIndex(x => x.Name);
             });
 
             //builder.Entity<YourEntity>(b =>
