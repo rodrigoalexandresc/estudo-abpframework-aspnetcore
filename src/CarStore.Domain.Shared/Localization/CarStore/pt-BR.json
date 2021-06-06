@@ -30,6 +30,7 @@
     "Permission:Cars": "Carros",
     "Permission:Cars.Create": "Criar novos carros",
     "Permission:Cars.Edit": "Alterar carros",
-    "Permission:Cars.Delete": "Excluir carros"
+    "Permission:Cars.Delete": "Excluir carros",
+    "CarStore:0001":  "Já existe uma marca com este mesmo nome: {name}"   
   }
 }
