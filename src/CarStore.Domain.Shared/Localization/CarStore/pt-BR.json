@@ -26,6 +26,11 @@
     "Enum:CarType:5": "Pickup",
     "Enum:CarType:6": "Citycar",
     "Enum:CarType:7": "Sport",
-    "CarStore:0001":  "Já existe uma marca com este mesmo nome: {name}"
+    "Permission:CarStore": "Loja de Carros",
+    "Permission:Cars": "Carros",
+    "Permission:Cars.Create": "Criar novos carros",
+    "Permission:Cars.Edit": "Alterar carros",
+    "Permission:Cars.Delete": "Excluir carros",
+    "CarStore:0001":  "Já existe uma marca com este mesmo nome: {name}"   
   }
 }
