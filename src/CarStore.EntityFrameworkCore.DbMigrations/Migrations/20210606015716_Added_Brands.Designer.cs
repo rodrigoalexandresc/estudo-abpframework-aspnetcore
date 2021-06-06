@@ -4,15 +4,17 @@ using CarStore.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace CarStore.Migrations
 {
     [DbContext(typeof(CarStoreMigrationsDbContext))]
-    partial class CarStoreMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210606015716_Added_Brands")]
+    partial class Added_Brands
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
